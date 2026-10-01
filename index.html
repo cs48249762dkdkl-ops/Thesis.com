@@ -1,0 +1,990 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>천문학 · 물리학 이론 자료실</title>
+
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        margin: 0;
+        font-family:
+            "Noto Sans KR",
+            Arial,
+            sans-serif;
+        background: #f3f6fa;
+        color: #172033;
+        line-height: 1.6;
+    }
+
+    header {
+        background: #101827;
+        color: white;
+        padding: 45px 20px;
+        text-align: center;
+    }
+
+    header h1 {
+        margin: 0 0 10px;
+        font-size: 32px;
+    }
+
+    header p {
+        margin: 0;
+        color: #cbd5e1;
+        font-size: 16px;
+    }
+
+    .container {
+        max-width: 1200px;
+        margin: 35px auto;
+        padding: 0 20px;
+    }
+
+    .intro {
+        background: white;
+        border-radius: 16px;
+        padding: 25px;
+        margin-bottom: 30px;
+        box-shadow: 0 5px 20px rgba(0,0,0,0.06);
+    }
+
+    .intro h2 {
+        margin-top: 0;
+    }
+
+    .flow {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 20px;
+    }
+
+    .flow span {
+        background: #e8eef7;
+        padding: 8px 14px;
+        border-radius: 20px;
+        font-size: 14px;
+        font-weight: bold;
+    }
+
+    .section-title {
+        margin: 40px 0 18px;
+        font-size: 24px;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns:
+            repeat(auto-fit, minmax(310px, 1fr));
+        gap: 20px;
+    }
+
+    .card {
+        background: white;
+        border-radius: 16px;
+        padding: 22px;
+        box-shadow: 0 5px 20px rgba(0,0,0,0.06);
+        border: 1px solid #e4e9f0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .id {
+        color: #64748b;
+        font-size: 13px;
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+
+    .card h3 {
+        margin: 0 0 10px;
+        font-size: 20px;
+    }
+
+    .description {
+        color: #475569;
+        margin-bottom: 15px;
+    }
+
+    .formula {
+        background: #f1f5f9;
+        border-radius: 10px;
+        padding: 13px;
+        margin: 10px 0 15px;
+        font-family: "Times New Roman", serif;
+        font-size: 19px;
+        text-align: center;
+    }
+
+    .tag {
+        display: inline-block;
+        width: fit-content;
+        padding: 5px 10px;
+        border-radius: 15px;
+        background: #e2e8f0;
+        color: #334155;
+        font-size: 12px;
+        font-weight: bold;
+        margin-bottom: 15px;
+    }
+
+    .source {
+        margin-top: auto;
+        padding-top: 15px;
+        border-top: 1px solid #e5e7eb;
+    }
+
+    .source-title {
+        font-size: 12px;
+        color: #64748b;
+        margin-bottom: 8px;
+    }
+
+    .source a {
+        display: inline-block;
+        text-decoration: none;
+        background: #172033;
+        color: white;
+        padding: 9px 13px;
+        border-radius: 8px;
+        font-size: 13px;
+        transition: 0.2s;
+    }
+
+    .source a:hover {
+        opacity: 0.8;
+        transform: translateY(-1px);
+    }
+
+    .status {
+        font-size: 13px;
+        margin-top: 10px;
+        color: #64748b;
+    }
+
+    footer {
+        margin-top: 50px;
+        background: #101827;
+        color: #94a3b8;
+        text-align: center;
+        padding: 30px 20px;
+        font-size: 13px;
+    }
+
+    @media (max-width: 600px) {
+        header h1 {
+            font-size: 25px;
+        }
+
+        .grid {
+            grid-template-columns: 1fr;
+        }
+    }
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>천문학 · 물리학 이론 자료실</h1>
+    <p>
+        「천문학과 물리학 이론을 통한 우주의 시공간과 천체 현상에 관한 연구」
+    </p>
+</header>
+
+
+<div class="container">
+
+    <section class="intro">
+
+        <h2>연구 자료 구조</h2>
+
+        <p>
+            이 사이트는 논문에서 사용한 물리학 및 천문학 이론을 정리하고,
+            각 이론을 확인하거나 검증할 수 있는 자료의 원자료 링크를 연결한다.
+        </p>
+
+        <div class="flow">
+            <span>논문</span>
+            <span>↓</span>
+            <span>이론</span>
+            <span>↓</span>
+            <span>공식 / 설명</span>
+            <span>↓</span>
+            <span>관측·실험 자료</span>
+            <span>↓</span>
+            <span>원자료 링크</span>
+        </div>
+
+    </section>
+
+
+    <!-- ========================= -->
+    <!-- 고전역학 -->
+    <!-- ========================= -->
+
+    <h2 class="section-title">
+        Ⅰ. 고전역학과 천체 운동
+    </h2>
+
+    <div class="grid">
+
+        <!-- T-001 -->
+
+        <article class="card">
+
+            <div class="id">T-001</div>
+
+            <h3>뉴턴의 운동 법칙</h3>
+
+            <div class="tag">
+                물리학 이론
+            </div>
+
+            <p class="description">
+                물체의 운동과 물체에 작용하는 힘 사이의 관계를 설명하는
+                뉴턴의 세 가지 운동 법칙이다.
+            </p>
+
+            <div class="formula">
+                F = ma
+            </div>
+
+            <div class="source">
+
+                <div class="source-title">
+                    NASA Glenn Research Center
+                </div>
+
+                <a
+                    href="https://www1.grc.nasa.gov/beginners-guide-to-aeronautics/newtons-laws-of-motion/"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    원자료 보기 →
+                </a>
+
+            </div>
+
+            <div class="status">
+                자료 유형: 이론 / 물리학 설명
+            </div>
+
+        </article>
+
+
+        <!-- T-002 -->
+
+        <article class="card">
+
+            <div class="id">T-002</div>
+
+            <h3>뉴턴의 만유인력 법칙</h3>
+
+            <div class="tag">
+                중력 이론
+            </div>
+
+            <p class="description">
+                질량을 가진 두 물체 사이에 작용하는 중력의 크기를
+                설명하는 고전역학의 법칙이다.
+            </p>
+
+            <div class="formula">
+                F = G(m₁m₂ / r²)
+            </div>
+
+            <div class="source">
+
+                <div class="source-title">
+                    NASA Science — Universe Glossary
+                </div>
+
+                <a
+                    href="https://science.nasa.gov/universe/glossary/"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    원자료 보기 →
+                </a>
+
+            </div>
+
+            <div class="status">
+                자료 유형: 이론 / 중력 설명
+            </div>
+
+        </article>
+
+
+        <!-- T-012 -->
+
+        <article class="card">
+
+            <div class="id">T-012</div>
+
+            <h3>천체 운동과 궤도</h3>
+
+            <div class="tag">
+                천체역학
+            </div>
+
+            <p class="description">
+                행성과 위성 등의 천체가 중력의 영향을 받아 궤도를
+                형성하고 운동하는 현상이다.
+            </p>
+
+            <div class="formula">
+                케플러 법칙 · 뉴턴 역학
+            </div>
+
+            <div class="source">
+
+                <div class="source-title">
+                    NASA Science — Orbits and Kepler's Laws
+                </div>
+
+                <a
+                    href="https://science.nasa.gov/solar-system/orbits-and-keplers-laws/"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    원자료 보기 →
+                </a>
+
+            </div>
+
+            <div class="status">
+                자료 유형: 태양계 궤도 / 천체 운동
+            </div>
+
+        </article>
+
+    </div>
+
+
+    <!-- ========================= -->
+    <!-- 특수상대성이론 -->
+    <!-- ========================= -->
+
+    <h2 class="section-title">
+        Ⅱ. 특수상대성이론
+    </h2>
+
+    <div class="grid">
+
+        <!-- T-003 -->
+
+        <article class="card">
+
+            <div class="id">T-003</div>
+
+            <h3>특수상대성이론</h3>
+
+            <div class="tag">
+                상대성이론
+            </div>
+
+            <p class="description">
+                관성계에서 물리 법칙의 형태가 같고 진공에서 빛의 속도가
+                관측자에 관계없이 일정하다는 원리를 바탕으로
+                시간과 공간을 설명하는 이론이다.
+            </p>
+
+            <div class="formula">
+                c ≈ 3.0 × 10⁸ m/s
+            </div>
+
+            <div class="source">
+
+                <div class="source-title">
+                    NASA — Einstein and General Relativity
+                </div>
+
+                <a
+                    href="https://www.nasa.gov/image-article/einstein-general-relativity/"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    원자료 보기 →
+                </a>
+
+            </div>
+
+            <div class="status">
+                자료 유형: 상대성이론 설명
+            </div>
+
+        </article>
+
+
+        <!-- T-004 -->
+
+        <article class="card">
+
+            <div class="id">T-004</div>
+
+            <h3>시간 지연</h3>
+
+            <div class="tag">
+                특수상대론
+            </div>
+
+            <p class="description">
+                상대적으로 빠르게 움직이는 시계가 다른 기준계의
+                관측자에게 더 느리게 흐르는 것으로 측정되는 현상이다.
+            </p>
+
+            <div class="formula">
+                Δt = γΔτ
+            </div>
+
+            <div class="source">
+
+                <div class="source-title">
+                    NIST — Putting Einstein to the Test
+                </div>
+
+                <a
+                    href="https://www.nist.gov/atomic-clocks/a-powerful-tool-for-science/putting-einstein-test"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    원자료 보기 →
+                </a>
+
+            </div>
+
+            <div class="status">
+                자료 유형: 원자시계 / 실험 검증
+            </div>
+
+        </article>
+
+
+        <!-- T-005 -->
+
+        <article class="card">
+
+            <div class="id">T-005</div>
+
+            <h3>길이 수축</h3>
+
+            <div class="tag">
+                특수상대론
+            </div>
+
+            <p class="description">
+                물체가 관측자에 대해 상대론적 속도로 움직일 때
+                운동 방향의 길이가 고유 길이보다 짧게 측정되는 현상이다.
+            </p>
+
+            <div class="formula">
+                L = L₀ / γ
+            </div>
+
+            <div class="source">
+
+                <div class="source-title">
+                    OpenStax — University Physics
+                </div>
+
+                <a
+                    href="https://openstax.org/books/university-physics-volume-3/pages/5-4-length-contraction"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    원자료 보기 →
+                </a>
+
+            </div>
+
+            <div class="status">
+                자료 유형: 이론 / 상대론 계산
+            </div>
+
+        </article>
+
+
+        <!-- T-006 -->
+
+        <article class="card">
+
+            <div class="id">T-006</div>
+
+            <h3>질량-에너지 등가</h3>
+
+            <div class="tag">
+                특수상대론
+            </div>
+
+            <p class="description">
+                질량과 에너지가 서로 연결되어 있음을 나타내는
+                상대론적 관계이다.
+            </p>
+
+            <div class="formula">
+                E = mc²
+            </div>
+
+            <div class="source">
+
+                <div class="source-title">
+                    NASA — Imagine the Universe
+                </div>
+
+                <a
+                    href="https://imagine.gsfc.nasa.gov/ask_astro/relativity.html"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    원자료 보기 →
+                </a>
+
+            </div>
+
+            <div class="status">
+                자료 유형: 이론 / 질량-에너지 관계
+            </div>
+
+        </article>
+
+    </div>
+
+
+    <!-- ========================= -->
+    <!-- 일반상대성이론 -->
+    <!-- ========================= -->
+
+    <h2 class="section-title">
+        Ⅲ. 일반상대성이론과 시공간
+    </h2>
+
+    <div class="grid">
+
+        <!-- T-007 -->
+
+        <article class="card">
+
+            <div class="id">T-007</div>
+
+            <h3>일반상대성이론</h3>
+
+            <div class="tag">
+                중력 이론
+            </div>
+
+            <p class="description">
+                중력을 질량과 에너지가 시공간의 구조에 영향을 주어
+                나타나는 현상으로 설명하는 이론이다.
+            </p>
+
+            <div class="formula">
+                중력 = 시공간의 곡률
+            </div>
+
+            <div class="source">
+
+                <div class="source-title">
+                    NASA Science
+                </div>
+
+                <a
+                    href="https://science.nasa.gov/astrophysics/programs/physics-of-the-cosmos/general-relativity-and-the-nature-of-spacetime/"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    원자료 보기 →
+                </a>
+
+            </div>
+
+            <div class="status">
+                자료 유형: 이론 / 관측 검증
+            </div>
+
+        </article>
+
+
+        <!-- T-008 -->
+
+        <article class="card">
+
+            <div class="id">T-008</div>
+
+            <h3>중력 시간 지연</h3>
+
+            <div class="tag">
+                일반상대론
+            </div>
+
+            <p class="description">
+                중력이 강한 곳의 시계가 중력이 약한 곳의 시계보다
+                상대적으로 느리게 진행되는 현상이다.
+            </p>
+
+            <div class="formula">
+                강한 중력 → 시간의 흐름이 느려짐
+            </div>
+
+            <div class="source">
+
+                <div class="source-title">
+                    NIST — Relativity and Optical Clocks
+                </div>
+
+                <a
+                    href="https://www.nist.gov/publications/relativity-and-optical-clocks"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    원자료 보기 →
+                </a>
+
+            </div>
+
+            <div class="status">
+                자료 유형: 원자시계 / 실험 검증
+            </div>
+
+        </article>
+
+
+        <!-- T-009 -->
+
+        <article class="card">
+
+            <div class="id">T-009</div>
+
+            <h3>시공간과 중력</h3>
+
+            <div class="tag">
+                시공간
+            </div>
+
+            <p class="description">
+                일반상대성이론에서는 공간과 시간이 하나의
+                시공간 구조를 이루며 질량과 에너지가 그 구조에
+                영향을 미친다고 설명한다.
+            </p>
+
+            <div class="formula">
+                Space + Time = Spacetime
+            </div>
+
+            <div class="source">
+
+                <div class="source-title">
+                    NASA — General Relativity and Spacetime
+                </div>
+
+                <a
+                    href="https://science.nasa.gov/astrophysics/programs/physics-of-the-cosmos/general-relativity-and-the-nature-of-spacetime/"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    원자료 보기 →
+                </a>
+
+            </div>
+
+            <div class="status">
+                자료 유형: 이론 / 시공간 연구
+            </div>
+
+        </article>
+
+    </div>
+
+
+    <!-- ========================= -->
+    <!-- 중성자별 / 펄서 -->
+    <!-- ========================= -->
+
+    <h2 class="section-title">
+        Ⅳ. 중성자별과 펄서
+    </h2>
+
+    <div class="grid">
+
+        <!-- T-010 -->
+
+        <article class="card">
+
+            <div class="id">T-010</div>
+
+            <h3>중성자별</h3>
+
+            <div class="tag">
+                천체 현상
+            </div>
+
+            <p class="description">
+                거대한 별이 진화한 뒤 중심핵이 붕괴하여 형성되는
+                매우 높은 밀도의 천체이다.
+            </p>
+
+            <div class="formula">
+                거대한 질량 → 핵붕괴 → 중성자별
+            </div>
+
+            <div class="source">
+
+                <div class="source-title">
+                    NASA Science — Neutron Stars
+                </div>
+
+                <a
+                    href="https://science.nasa.gov/neutron-stars/"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    원자료 보기 →
+                </a>
+
+            </div>
+
+            <div class="status">
+                자료 유형: 천체 관측 / 천체물리학
+            </div>
+
+        </article>
+
+
+        <!-- T-011 -->
+
+        <article class="card">
+
+            <div class="id">T-011</div>
+
+            <h3>펄서</h3>
+
+            <div class="tag">
+                천체 현상
+            </div>
+
+            <p class="description">
+                빠르게 회전하며 강한 자기장을 가진 중성자별로,
+                특정 방향으로 방출되는 복사가 관측자에게
+                주기적인 펄스로 나타나는 천체이다.
+            </p>
+
+            <div class="formula">
+                빠른 회전 + 강한 자기장 → 주기적 신호
+            </div>
+
+            <div class="source">
+
+                <div class="source-title">
+                    NASA Science — Hubble Pulsars
+                </div>
+
+                <a
+                    href="https://science.nasa.gov/mission/hubble/science/science-behind-the-discoveries/hubble-pulsars/"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    원자료 보기 →
+                </a>
+
+            </div>
+
+            <div class="status">
+                자료 유형: 천체 관측 / 펄서
+            </div>
+
+        </article>
+
+    </div>
+
+
+    <!-- ========================= -->
+    <!-- 소천체 -->
+    <!-- ========================= -->
+
+    <h2 class="section-title">
+        Ⅴ. 태양계 소천체
+    </h2>
+
+    <div class="grid">
+
+        <!-- T-013 -->
+
+        <article class="card">
+
+            <div class="id">T-013</div>
+
+            <h3>소행성대</h3>
+
+            <div class="tag">
+                태양계 구조
+            </div>
+
+            <p class="description">
+                화성과 목성 사이에 많은 소행성이 분포하는
+                태양계의 영역이다.
+            </p>
+
+            <div class="formula">
+                태양 → 행성계 → 소행성대
+            </div>
+
+            <div class="source">
+
+                <div class="source-title">
+                    NASA Science — Solar System Facts
+                </div>
+
+                <a
+                    href="https://science.nasa.gov/solar-system/solar-system-facts/"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    원자료 보기 →
+                </a>
+
+            </div>
+
+            <div class="status">
+                자료 유형: 태양계 관측 / 천체 분포
+            </div>
+
+        </article>
+
+
+        <!-- T-014 -->
+
+        <article class="card">
+
+            <div class="id">T-014</div>
+
+            <h3>카이퍼대</h3>
+
+            <div class="tag">
+                태양계 외곽
+            </div>
+
+            <p class="description">
+                해왕성 궤도 바깥에 위치한 얼음 천체들의
+                광범위한 영역이다.
+            </p>
+
+            <div class="formula">
+                Neptune 바깥 → Kuiper Belt
+            </div>
+
+            <div class="source">
+
+                <div class="source-title">
+                    NASA Science — Kuiper Belt
+                </div>
+
+                <a
+                    href="https://science.nasa.gov/solar-system/kuiper-belt/"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    원자료 보기 →
+                </a>
+
+            </div>
+
+            <div class="status">
+                자료 유형: 태양계 관측 / 천체 분포
+            </div>
+
+        </article>
+
+    </div>
+
+
+    <!-- ========================= -->
+    <!-- 가설적 개념 -->
+    <!-- ========================= -->
+
+    <h2 class="section-title">
+        Ⅵ. 이론적·가설적 우주 이동 개념
+    </h2>
+
+    <div class="grid">
+
+        <!-- T-015 -->
+
+        <article class="card">
+
+            <div class="id">T-015</div>
+
+            <h3>알쿠비에레 워프 드라이브</h3>
+
+            <div class="tag">
+                가설적 개념
+            </div>
+
+            <p class="description">
+                일반상대성이론의 수학적 해를 바탕으로 제안된
+                가설적인 시공간 이동 개념이다.
+                우주선 자체가 국소적으로 빛보다 빠르게 움직이는 대신
+                우주선 주변의 시공간을 변화시키는 방식으로
+                초광속 이동을 이론적으로 설명한다.
+            </p>
+
+            <div class="formula">
+                시공간 팽창 + 시공간 수축
+            </div>
+
+            <div class="source">
+
+                <div class="source-title">
+                    Miguel Alcubierre, 1994 — Original Paper
+                </div>
+
+                <a
+                    href="https://doi.org/10.1088/0264-9381/11/5/001"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    원 논문 보기 →
+                </a>
+
+            </div>
+
+            <div class="status">
+                자료 유형: 가설 / 수학적 모델 / 실현된 기술 아님
+            </div>
+
+        </article>
+
+    </div>
+
+
+    <!-- ========================= -->
+    <!-- 검증 자료 안내 -->
+    <!-- ========================= -->
+
+    <section class="intro" style="margin-top:45px;">
+
+        <h2>검증 자료를 보는 방법</h2>
+
+        <p>
+            이 사이트에서 각 이론의 자료를 확인할 때는
+            단순히 이론의 설명만 보는 것이 아니라
+            다음 순서로 비교한다.
+        </p>
+
+        <div class="flow">
+            <span>① 이론</span>
+            <span>② 수학적 예측</span>
+            <span>③ 실험 또는 관측</span>
+            <span>④ 측정값</span>
+            <span>⑤ 이론과 비교</span>
+        </div>
+
+        <p style="margin-top:20px;">
+            특히 상대성이론의 경우 NIST는 원자시계를 이용한 시간 지연 측정과
+            GPS에서 상대론적 보정이 필요한 이유를 설명하고 있다.
+            :contentReference[oaicite:3]{index=3}
+        </p>
+
+    </section>
+
+</div>
+
+
+<footer>
+    천문학과 물리학 이론 자료실<br>
+    Astronomy & Physics Research Reference
+</footer>
+
+</body>
+</html>
